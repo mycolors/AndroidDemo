@@ -1,6 +1,7 @@
 package xyz.pozhu.demo.singleclick;
 
-import android.support.v7.app.AppCompatActivity;
+import android.annotation.SuppressLint;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -77,13 +78,14 @@ public class SingleClickActivity extends AppCompatActivity {
     }
 
 
+    @SuppressLint("CheckResult")
     private void singleClick3() {
         RxView.clicks(btnClick3)
                 .throttleFirst(1, TimeUnit.SECONDS)
                 .subscribe(new Consumer<Unit>() {
                     @Override
                     public void accept(Unit unit) throws Exception {
-                        btnClick3.setText(unit.toString());
+                        btnClick3.setText(System.currentTimeMillis() + "");
                     }
                 });
     }

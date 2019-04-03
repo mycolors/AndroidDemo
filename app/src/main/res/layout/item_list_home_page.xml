@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/view_padding"
+    android:paddingTop="@dimen/view_padding_small"
+    android:paddingEnd="@dimen/view_padding"
+    android:paddingBottom="@dimen/view_padding_small">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/view_margin_small" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
