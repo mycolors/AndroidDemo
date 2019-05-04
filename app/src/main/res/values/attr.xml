@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BatteryView">
+        <attr name="battery_view_height" format="integer" />
+        <attr name="battery_view_width" format="integer" />
+        <attr name="battery_view_inside_margin" format="integer" />
+
+    </declare-styleable>
+</resources>
